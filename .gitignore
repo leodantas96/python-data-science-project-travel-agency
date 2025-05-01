@@ -1,0 +1,13 @@
+# Ignora ficheiros de config
+config.ini
+.env
+
+# Ignora ficheiros temporários
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignora ficheiros pessoais
+*.log
+*.sqlite
+.DS_Store
