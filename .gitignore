@@ -11,3 +11,5 @@ __pycache__/
 *.log
 *.sqlite
 .DS_Store
+optitravel_client.py
+setup.sql

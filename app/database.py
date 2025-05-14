@@ -1,5 +1,7 @@
-import pymysql
+"""Módulo para criar a conexão à base de dados"""
+
 import configparser
+import pymysql
 
 def obter_conexao():
     config = configparser.ConfigParser()

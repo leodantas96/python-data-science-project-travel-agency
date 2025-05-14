@@ -1,3 +1,7 @@
+'''Módulo para criar a Graphical User Interface 
+para mostrar a janela de Login e a janela com 
+o Dashboard avançado e respetivos widgets'''
+
 import tkinter as tk
 from tkinter import messagebox
 from app.login import validar_login

@@ -1,5 +1,7 @@
+"""Módulo para validar o processo de Login"""
+
 from app.database import obter_conexao
-import hashlib
+
 
 def validar_login(username, password):
     """Valida o login do operador."""

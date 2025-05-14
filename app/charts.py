@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from tkcalendar import DateEntry
+from app.database import obter_conexao
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from app.database import obter_conexao
-from tkinter import ttk
+
 
 def mostrar_grafico_vendas():
     """Abre uma janela para seleção de análise de vendas."""
