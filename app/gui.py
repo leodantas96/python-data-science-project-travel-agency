@@ -28,7 +28,7 @@ def iniciar_login():
             root.destroy()
             abrir_dashboard()
         else:
-            messagebox.showerror("Erro", "Usuário ou senha inválidos.")
+            messagebox.showerror("Erro", "Utilizador ou password inválidos.")
 
     tk.Button(root, text="Login", command=login).pack(pady=10)
     root.mainloop()

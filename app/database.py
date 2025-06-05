@@ -5,7 +5,7 @@ import pymysql
 
 def obter_conexao():
     config = configparser.ConfigParser()
-    config.read("config.ini")
+    config.read("data/config.ini")
 
     return pymysql.connect(
         host=config["database"]["host"],

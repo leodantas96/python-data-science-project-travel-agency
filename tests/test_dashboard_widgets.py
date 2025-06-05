@@ -4,6 +4,10 @@ import tkinter as tk
 from tkinter import ttk
 import pandas as pd
 from app.dashboard_widgets import abrir_dashboard_widgets
+import matplotlib
+
+# Garante não abrir janelas de fato
+matplotlib.use("Agg")
 
 
 def encontrar_widget_por_tipo(widget, tipo):
@@ -21,6 +25,7 @@ class TestDashboardWidgets(unittest.TestCase):
 
     def setUp(self):
         self.root = tk.Tk()
+        self.root.withdraw()
         self.frame = tk.Frame(self.root)
         self.frame.pack()
         self.data_ini = "2025-01-01"
@@ -47,14 +52,13 @@ class TestDashboardWidgets(unittest.TestCase):
 
         abrir_dashboard_widgets(self.data_ini, self.data_fim, self.operadores, self.frame)
 
-        # Verifica existência dos widgets esperados
         trees = encontrar_widget_por_tipo(self.frame, ttk.Treeview)
         self.assertGreaterEqual(len(trees), 1, "Deve existir uma tabela Treeview")
 
-        # Verifica ordenação decrescente da tabela pela coluna "preco"
         tree = trees[0]
         valores = [float(tree.item(iid)["values"][2]) for iid in tree.get_children()]
-        self.assertEqual(valores, sorted(valores, reverse=True), "A tabela deve estar ordenada por vendas (preco) decrescente")
+        self.assertEqual(valores, sorted(valores, reverse=True),
+                         "A tabela deve estar ordenada por vendas (preco) decrescente")
 
     @patch("app.dashboard_widgets.obter_conexao")
     @patch("pandas.read_sql")

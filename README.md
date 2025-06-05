@@ -1,6 +1,7 @@
 # 📊 Agência de Viagens – Dashboard Analítico
 
-Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a base de dados `MariaDB`, e visualização de dados com `matplotlib`. Permite aos utilizadores analisarem vendas, margem e outros indicadores por operador, destino e morada de cliente.
+Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a base de dados `MariaDB`, e visualização de dados com `matplotlib`.
+ Permite aos utilizadores analisarem vendas, margem e outros indicadores por operador, destino e morada de cliente.
 
 ---
 
@@ -21,23 +22,50 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 ## 📁 Estrutura do Projeto
 
 projeto_agencia_viagens/ │ 
-├── app/ │ 
-    ├── charts.py │ 
+├── app/ │
+    ├── __init__.py │  
+    ├── charts.py │
+    ├── dashboard_widgets.py │  
     ├── dashboard.py │ 
-    ├── dashboard_widgets.py │ 
     ├── database.py │ 
     ├── gui.py │ 
     ├── login.py │ 
+    ├── pdf_generator.py │
+├── data/ 
+    │ └── setup.sql │ 
 ├── tests/ 
-    │ └── ... testes unitários │ 
-└── main.py # ▶️ Ponto de entrada
+    │ └── __init__.py │
+    │ └── test_charts.py │ 
+    │ └── test_dashboard_widgets.py │ 
+    │ └── test_database.py │ 
+    │ └── test_login.py │
+└── .gitignore # 
+└── config.ini #     
+└── main.py # ▶️ Ponto de entrada 
+└── Makefile
+└── README.md
+└── requirements.txt
 
+* dir1
+  * dir2
+dir34
 ---
 
+
+1- instalaçao 
+```bash
+pip install -r requirements.txt
+2 obter dados 
+3 executar interface 
+4 verificar a cobertura e testes - pylint
+
+
+```
 ## 💾 Requisitos
 
 - Python 3.8+
-- MariaDB ou MySQL
+- MariaDB
+ - # Intruções de instalação de MariaDB
 - Pacotes Python:
   - `pymysql`
   - `tkinter`

@@ -1,6 +1,8 @@
 # Ignora ficheiros de config
-config.ini
+data/config.ini
 .env
+.coverage
+htmlcov/
 
 # Ignora ficheiros temporários
 __pycache__/
