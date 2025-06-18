@@ -21,48 +21,33 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 
 ## 📁 Estrutura do Projeto
 
-projeto_agencia_viagens/ │ 
-├── app/ │
-    ├── __init__.py │  
-    ├── charts.py │
-    ├── dashboard_widgets.py │  
-    ├── dashboard.py │ 
-    ├── database.py │ 
-    ├── gui.py │ 
-    ├── login.py │ 
-    ├── pdf_generator.py │
-├── data/ 
-    │ └── setup.sql │ 
-├── tests/ 
-    │ └── __init__.py │
-    │ └── test_charts.py │ 
-    │ └── test_dashboard_widgets.py │ 
-    │ └── test_database.py │ 
-    │ └── test_login.py │
-└── .gitignore # 
-└── config.ini #     
-└── main.py # ▶️ Ponto de entrada 
-└── Makefile
-└── README.md
-└── requirements.txt
-
-* dir1
-  * dir2
-dir34
----
+* projeto_agencia_viagens
+  * app
+    * __init__.py
+    * charts.py
+    * dashboard_widgets.py
+    * dashboard.py
+    * database.py
+    * gui.py
+    * login.py
+    * pdf_generator.py
+  * data
+    * setup.sql
+  * tests
+    * __init__.py
+    * test_charts.py
+    * test_dashboard_widgets.py
+    * test_database.py
+    * test_login.py
+  * .gitignore
+  * config.ini
+  * main.py
+  * Makefile
+  * README.md
+  * requirements.txt
 
 
-1- instalaçao 
-```bash
-pip install -r requirements.txt
-2 obter dados 
-3 executar interface 
-4 verificar a cobertura e testes - pylint
-
-
-```
 ## 💾 Requisitos
-
 - Python 3.8+
 - MariaDB
  - # Intruções de instalação de MariaDB
