@@ -7,15 +7,15 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 
 ## 🔧 Funcionalidades
 
-- Login por operador
-- Análise de vendas por:
-  - Vendas mensais por operador
-  - Margem mensal por operador
-  - Vendas por morada de cliente
-- Cards resumo com total de vendas e margem por colaborador
-- Tabela interativa com todos os dados filtrados
-- Destaque nos gráficos ao selecionar linhas da tabela
-- Atualização automática conforme datas e operadores escolhidos
+* Login por operador
+* Análise de vendas por:
+  * Vendas mensais por operador
+  * Margem mensal por operador
+  * Vendas por morada de cliente
+* Cards resumo com total de vendas e margem por colaborador
+* Tabela interativa com todos os dados filtrados
+* Destaque nos gráficos ao selecionar linhas da tabela
+* Atualização automática conforme datas e operadores escolhidos
 
 ---
 
@@ -48,12 +48,12 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 
 
 ## 💾 Requisitos
-- Python 3.8+
-- MariaDB
+* Python 3.8+
+* MariaDB
  - # Intruções de instalação de MariaDB
-- Pacotes Python:
-  - `pymysql`
-  - `tkinter`
-  - `tkcalendar`
-  - `matplotlib`
-  - `pandas`
+* Pacotes Python:
+  * `pymysql`
+  * `tkinter`
+  * `tkcalendar`
+  * `matplotlib`
+  * `pandas`
