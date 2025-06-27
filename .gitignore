@@ -5,6 +5,7 @@ data/config.ini
 htmlcov/
 
 # Ignora o ambiente virtual
+venv/
 .venv/
 
 # Ignora ficheiros temporários
