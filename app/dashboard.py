@@ -1,3 +1,7 @@
+"""Interface principal do dashboard da agência de viagens.
+Contém as funções de login, seleção de filtros, e integração com os widgets analíticos.
+"""
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 from tkcalendar import DateEntry
@@ -20,6 +24,20 @@ estado_atual = {
 
 
 def abrir_avancado():
+    """
+    Abre a janela principal do Dashboard Avançado.
+
+    Esta função inicializa a interface gráfica para análise avançada de vendas,
+    permitindo ao utilizador selecionar intervalos de datas e operadores para análise.
+    Gera e atualiza os widgets analíticos com base nos filtros aplicados, incluindo
+    gráficos, tabelas e análise textual dos dados. Inclui também suporte à exportação
+    para PDF do relatório gerado.
+
+    Componentes:
+      - Filtros por data inicial, data final e operadores (múltipla seleção)
+      - Área de visualização dinâmica dos widgets analíticos
+      - Integração com funções de análise de dados e exportação
+    """
     root = tk.Tk()
     root.title("Dashboard Avançado")
     root.geometry("1000x700")
@@ -98,7 +116,9 @@ def abrir_avancado():
         gerar_pdf_com_widgets(df=df, figures=figs, analise_texto=estado_atual["analise"])
 
     # ─── Botões ───────────────────────────────────────────────────────
-    botao_pdf = ttk.Button(filtros_frame, text="Exportar PDF", command=exportar_pdf, state=tk.DISABLED)
+    botao_pdf = ttk.Button(
+        filtros_frame,text="Exportar PDF",command=exportar_pdf,state=tk.DISABLED
+    )
     botao_pdf.grid(row=2, column=0, columnspan=2, pady=10, padx=5, sticky=tk.W)
 
     botao_carregar = ttk.Button(filtros_frame, text="Aplicar filtros", command=atualizar_dashboard)

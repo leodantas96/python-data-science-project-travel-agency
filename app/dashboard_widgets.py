@@ -1,4 +1,7 @@
-# app/dashboard_widgets.py
+"""Widgets e componentes analíticos para o dashboard principal da aplicação.
+Inclui funções para gerar gráficos, tabelas e análises baseadas nos dados de 
+vendas, margens, clientes e operadores.
+"""
 
 import tkinter as tk
 from tkinter import ttk

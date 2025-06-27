@@ -1,3 +1,7 @@
+"""Geração de relatórios PDF a partir dos dados e gráficos do dashboard.
+Este módulo permite exportar os resultados e análises para ficheiros PDF.
+"""
+
 from fpdf import FPDF
 from matplotlib.figure import Figure
 import pandas as pd
