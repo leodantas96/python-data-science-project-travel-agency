@@ -24,15 +24,17 @@ help:
 	@echo "  make clean          - Remove arquivos temporarios e pycache"
 
 venv:
-	$(PYTHON) -m venv $(VENV_DIR)
-	@echo "Ambiente virtual criado."
+venv:
+	@if not exist "$(VENV_DIR)" $(PYTHON) -m venv $(VENV_DIR)
+	@echo "Ambiente virtual pronto."
 	@echo "  No Linux/macOS: source $(VENV_DIR)/bin/activate"
-	@echo "  No Windows:     $(VENV_DIR)/Scripts/activate"
+	@echo "  No Windows:     $(VENV_DIR)\Scripts\activate"
 
 install: venv
 	$(PIP) install -r requirements.txt
 
 run: install
+	@echo "Certifica-te que tens o venv ATIVADO antes de correr este comando!"
 	$(PYTHON) main.py
 
 coverage:
