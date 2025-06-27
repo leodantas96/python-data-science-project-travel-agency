@@ -16,6 +16,11 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 * Tabela interativa com todos os dados filtrados
 * Destaque nos gráficos ao selecionar linhas da tabela
 * Atualização automática conforme datas e operadores escolhidos
+* Download de ficheiro PDF com as datas e operadores escolhidos
+  * Cada gráfico aparece numa única página A4
+  * A tabela de reservas aparece dividida em múltiplas páginas caso existam reservas a extravasar 1 página
+  * No fim, uma página A4 contém uma análise dos dados:
+    * Fazendo uma análise do volume de vendas face ao período homólogo
 
 ---
 
