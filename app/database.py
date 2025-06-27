@@ -4,6 +4,7 @@ import configparser
 import pymysql
 
 def obter_conexao():
+    """Abre a ligação à base de dados e devolve o objeto de conexão."""
     config = configparser.ConfigParser()
     config.read("data/config.ini")
 
