@@ -4,6 +4,9 @@ data/config.ini
 .coverage
 htmlcov/
 
+# Ignora o ambiente virtual
+.venv/
+
 # Ignora ficheiros temporários
 __pycache__/
 *.pyc
