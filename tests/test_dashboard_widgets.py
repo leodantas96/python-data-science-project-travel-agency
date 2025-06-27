@@ -35,6 +35,11 @@ class TestDashboardWidgets(unittest.TestCase):
     def tearDown(self):
         self.root.destroy()
 
+    """Testa se a função retorna None e lista vazia quando não há dados."""
+    def test_retorna_none_se_operadores_vazio(self):
+        result = abrir_dashboard_widgets("2023-01-01", "2023-01-31", [], self.frame)
+        self.assertEqual(result, (None, [], ""))
+
     @patch("app.dashboard_widgets.obter_conexao")
     @patch("pandas.read_sql")
     def test_widgets_gerados_com_dados(self, mock_read_sql, mock_conexao):
