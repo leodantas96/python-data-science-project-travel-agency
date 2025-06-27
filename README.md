@@ -29,7 +29,6 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
 * projeto_agencia_viagens
   * app
     * __init__.py
-    * charts.py
     * dashboard_widgets.py
     * dashboard.py
     * database.py
@@ -40,7 +39,6 @@ Projeto desenvolvido em Python com interface gráfica `Tkinter`, ligação a bas
     * setup.sql
   * tests
     * __init__.py
-    * test_charts.py
     * test_dashboard_widgets.py
     * test_database.py
     * test_login.py
