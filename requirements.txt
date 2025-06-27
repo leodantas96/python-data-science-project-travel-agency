@@ -2,3 +2,6 @@ matplotlib==3.10.1
 pandas==2.2.3
 PyMySQL==1.1.1
 tkcalendar==1.6.1
+coverage
+pylint
+unittest
