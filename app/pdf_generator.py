@@ -2,15 +2,13 @@
 Este módulo permite exportar os resultados e análises para ficheiros PDF.
 """
 
-from fpdf import FPDF
-from matplotlib.figure import Figure
-import pandas as pd
-from PIL import Image
-import matplotlib.pyplot as plt
 import tempfile
 import os
 import datetime
-
+import matplotlib.pyplot as plt
+import pandas as pd
+from fpdf import FPDF
+from matplotlib.figure import Figure
 
 def gerar_pdf_com_widgets(df: pd.DataFrame, figures: list[Figure], analise_texto: str):
     """
